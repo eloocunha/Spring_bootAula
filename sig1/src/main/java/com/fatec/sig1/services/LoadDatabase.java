@@ -12,8 +12,6 @@ import com.fatec.sig1.model.MantemClienteRepository;
 @Configuration
 class LoadDatabase {
 	private static final Logger log = LoggerFactory.getLogger(LoadDatabase.class);
-	@Autowired
-	MantemClienteRepository clienteRepository;
 
 	@Bean
 	CommandLineRunner initDatabase(MantemClienteRepository repository) {
